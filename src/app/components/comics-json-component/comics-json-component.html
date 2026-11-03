@@ -1,1 +1,13 @@
-<p>comics-json-component works!</p>
+<button (click)="mostrarComics()">
+        cargar comics
+ </button>
+      @for (tebeo of arraycomics; track tebeo) {
+        <h3 style="color: rgb(233,19,119)">
+            Titulo: {{tebeo.titulo}}
+
+        </h3>
+        <p>descripcion : {{tebeo.descripcion}}</p>
+        <img src="{{tebeo.imagen}}"
+        style="width: 120px; height: 160px;"/>
+
+      }
