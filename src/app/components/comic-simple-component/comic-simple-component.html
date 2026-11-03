@@ -1,1 +1,20 @@
-<p>comic-simple-component works!</p>
+<h2>Comics Simple>/h2>
+ <h3 style="color: brown">
+    Titulo: {{comic.titulo}}
+ </h3>
+ <p>Descripcion : {{comic.descripcion}}</p>
+ <img src="{{comic.imagen}}" alt="">
+      style="width: 90px; height: 130px;"/>   
+ <button (click)="mostrarComics()">
+        cargar comics
+ </button>
+      @for (tebeo of arraycomics; track tebeo) {
+        <h3 style="color: rgb(233,19,119)">
+            Titulo: {{tebeo.titulo}}
+
+        </h3>
+        <p>descripcion : {{tebeo.descripcion}}</p>
+        <img src="{{tebeo.imagen}}"
+        style="width: 120px; height: 160px;"/>
+
+      }
