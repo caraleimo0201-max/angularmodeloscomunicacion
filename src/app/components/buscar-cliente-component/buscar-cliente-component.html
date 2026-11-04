@@ -1,0 +1,20 @@
+<h1>Buscar cliente Json</h1>
+<form #form="ngForm">
+    //INTRODUZCA EL CLIENTE
+    <input type="number" name="cajaid" #cajaid/>
+<button (click)="buscarCliente()">
+    Buscar cliente
+
+</button>
+
+</form>
+@if (cliente) {
+    <h1 style="color: blue;">
+        nombre: {{cliente.nombre}}
+    </h1>
+    <p>{{cliente.paginaweb}}</p>
+    <img src="{{cliente.imagencliente}}"
+    style="width: 100px; height: 150px;">
+}
+
+

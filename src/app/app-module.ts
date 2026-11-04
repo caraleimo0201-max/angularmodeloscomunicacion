@@ -6,10 +6,21 @@ import { MenuComponent } from './components/menu-component/menu-component';
 import { HomeComponent } from './components/home-component/home-component';
 import { ComicSimpleComponent } from './components/comic-simple-component/comic-simple-component';
 import { ComicsJsonComponent } from './components/comics-json-component/comics-json-component';
+import { jugadoresComponent } from './components/jugadores-component/jugadores-component';
+import { FormsModule } from '@angular/forms';
+import { BuscarClienteComponent } from './components/buscar-cliente-component/buscar-cliente-component';
 
 @NgModule({
-  declarations: [App, MenuComponent, HomeComponent, ComicSimpleComponent, ComicsJsonComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    App,
+    MenuComponent,
+    HomeComponent,
+    ComicSimpleComponent,
+    ComicsJsonComponent,
+    jugadoresComponent,
+    BuscarClienteComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
