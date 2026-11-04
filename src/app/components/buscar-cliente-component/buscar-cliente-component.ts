@@ -7,13 +7,30 @@ import { Cliente } from '../../../models/cliente';
   styleUrl: './buscar-cliente-component.css',
   templateUrl: './buscar-cliente-component.html',
 })
-export class BuscarClienteComponent {
+export class BuscarClienteComponent implements OnInit {
+  ngOnInit(): void {
+
+}
   @ViewChild("cajaid") cajaid!: ElementRef
   cliente!: Cliente
 
   constructor(
     private _cdr: ChangeDetectorRef,
   ) {}
+
+  async ngOninit(): Promise<void> {
+           let path= "documents/clientesdatos.json";
+        let response= await fetch(path);
+        let datos= await response.json();
+        //recorremos todos los datos del json
+        for(let elem of datos){
+
+
+      }
+               this._cdr.detectChanges();
+  }
+
+
   async buscarCliente(): Promise<void>{
     //en la caja, escriben el numero del idcliente 14
     let idcliente= parseInt(this.cajaid.nativeElement.value);
