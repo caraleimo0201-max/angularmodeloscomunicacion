@@ -9,6 +9,10 @@ import { ComicsJsonComponent } from './components/comics-json-component/comics-j
 import { jugadoresComponent } from './components/jugadores-component/jugadores-component';
 import { FormsModule } from '@angular/forms';
 import { BuscarClienteComponent } from './components/buscar-cliente-component/buscar-cliente-component';
+import { PadreDeportesComponent } from './components/padre-deportes-component/padre-deportes-component';
+import { HijoDeporteComponent } from './components/hijo-deporte-component/hijo-deporte-component';
+import { LibreriaComponent } from './components/libreria-component/libreria-component';
+import { ComicComponent } from './components/comic-component/comic-component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { BuscarClienteComponent } from './components/buscar-cliente-component/bu
     ComicsJsonComponent,
     jugadoresComponent,
     BuscarClienteComponent,
+    PadreDeportesComponent,
+    HijoDeporteComponent,
+    LibreriaComponent,
+    ComicComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
