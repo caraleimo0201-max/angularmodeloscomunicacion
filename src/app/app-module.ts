@@ -15,6 +15,8 @@ import { LibreriaComponent } from './components/libreria-component/libreria-comp
 import { ComicComponent } from './components/comic-component/comic-component';
 import { PadreNumerosComponent } from './components/padre-numeros-component/padre-numeros-component';
 import { HijoNumeroComponent } from './components/hijo-numero-component/hijo-numero-component';
+import { CineComponent } from './components/cine-component/cine-component';
+import { PeliculaComponent } from './components/pelicula-component/pelicula-component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { HijoNumeroComponent } from './components/hijo-numero-component/hijo-num
     ComicComponent,
     PadreNumerosComponent,
     HijoNumeroComponent,
+    CineComponent,
+    PeliculaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],

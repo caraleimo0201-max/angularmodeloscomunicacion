@@ -1,0 +1,22 @@
+<h1>Cine</h1>
+<h3 style="color: blue">
+   
+</h3>
+
+
+
+<button>
+    cargar peliculas: 
+
+</button>
+@for (peli of arraypeliculas; track peli) {
+    <h3 style="color: rgb(233,19,119)">
+        {{peli.Titulo}} . {{peli.Argumento}} . {{peli.Fecha_Estreno}} . {{peli.Genero}} . 
+        {{peli.Imagen}} . {{peli.País}} . {{peli.YouTube}}
+
+
+    </h3>
+}
+    <img src="https://www.youtube.com/watch?v=BTRucDG2ZHs" alt="peli.Titulo"> 
+    style="width: 120px; height: 120px; margin: 10px;>
+
