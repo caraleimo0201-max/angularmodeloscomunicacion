@@ -11,6 +11,7 @@ import { HijoDeporteComponent } from './components/hijo-deporte-component/hijo-d
 import { LibreriaComponent } from './components/libreria-component/libreria-component';
 import { Comic } from '../models/comic';
 import { ComicComponent } from './components/comic-component/comic-component';
+import { PadreNumerosComponent } from './components/padre-numeros-component/padre-numeros-component';
 
 
 const routes: Routes = [
@@ -23,8 +24,8 @@ const routes: Routes = [
   {path: "hijodeporte", component: HijoDeporteComponent},
   {path: "libreria", component:   LibreriaComponent},
   {path: "comics", component: ComicComponent},
- 
-
+  {path: "padrenumeros", component:PadreNumerosComponent},
+  
 
 ];
 
